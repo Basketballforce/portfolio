@@ -29,9 +29,6 @@
     animation-delay: 0.5;
 }
 
-.btn-home:after{
-    content:'🏠 Home';
-}
 
 .btn-about:after{
     content:'🏀 About';
@@ -39,13 +36,6 @@
 .btn-about:hover:after{
     animation: changeBall 0.5s linear;
     animation-fill-mode: forwards;
-}
-
-.btn-work:after{
-    content:'🗑️ Work';
-}
-.btn-work:hover:after{
-    content:'🗑️ Work';
 }
 
 .btn-contact:after{
