@@ -14,11 +14,19 @@
     animation-delay: 1.5s;
 }
 
-.wobble-hor-bottom {
+.onload-wobble {
 	-webkit-animation: wobble-hor-bottom 1.5s ease-in-out both;
 	        animation: wobble-hor-bottom 1.5s ease-in-out both;
 
     animation-delay: 1.75s;
+}
+
+.star-svg{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  stroke-width: 2px;
+  opacity: 0;
 }
 
 
@@ -27,6 +35,32 @@
     -webkit-animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
     animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
     animation-delay: 0.5;
+    background: linear-gradient(to right, white 50%, rgb(33,37,41) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+
+.btn:hover {
+  background-position: left bottom;
+}
+
+.btn:hover .star-svg{
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+.btn:focus,.btn:active{
+  color: white;
+}
+
+.btn:hover.btn:focus {
+  color: black;
+}
+
+.btn:hover.btn:active {
+  color: black;
 }
 
 
