@@ -32,10 +32,6 @@
       </span>
 
       <button class="btn btn-lg btn-outline-light"> <i data-feather="moon"></i>
-        <i data-feather="star" class="star-svg top-50"></i>
-        <i data-feather="star" class="star-svg bottom-50"></i>
-        <i data-feather="star" class="star-svg start-50"></i>
-        <i data-feather="star" class="star-svg end-50"></i>
 
       </button>
 
@@ -51,7 +47,7 @@
     </h1>
   </div>
 
-  <h3 class="text-center poppins fade-in"><span class="gradient-text">Welcome to my site</span> <span>🥳</span></h3>
+  <h3 class="text-center poppins fade-in"><span class="gradient-text">Welcome to my site</span> <span id="party-time">🥳</span></h3>
 
   <div class="mt-5 center-card">
     <h1 class="text-center poppins gradient-text">SKILLS</h1>
@@ -59,7 +55,7 @@
   <h3 class="text-center poppins fade-in"><span class="gradient-text">To pay the bills</span> <span>💸</span></h3>
 
   <div class="integration-container mb-5">
-    <p class="center-logo text-center poppins fs-1 glassy-white">COOL SKILLZ</p>
+    <p class="center-logo text-center poppins skillz-font glassy-white">COOL SKILLZ</p>
 
     <span class="integration" id="integration-1">
       <img src="./docker.png" alt="">
@@ -120,6 +116,52 @@
 <script src="./feather.js"></script>
 <script src="/bootstrapv5_2.js"></script>
 <script src="/vanilla-tilt-min.js"></script>
+<script src="/party.js"></script>
+
+<script>
+
+function triggerfire(){
+  var count = 200;
+var defaults = {
+  origin: { y: 0.7 }
+};
+
+function fire(particleRatio, opts) {
+  confetti(Object.assign({}, defaults, opts, {
+    particleCount: Math.floor(count * particleRatio)
+  }));
+}
+
+fire(0.25, {
+  spread: 26,
+  startVelocity: 55,
+});
+fire(0.2, {
+  spread: 60,
+});
+fire(0.35, {
+  spread: 100,
+  decay: 0.91,
+  scalar: 0.8
+});
+fire(0.1, {
+  spread: 120,
+  startVelocity: 25,
+  decay: 0.92,
+  scalar: 1.2
+});
+fire(0.1, {
+  spread: 120,
+  startVelocity: 45,
+});
+
+}
+
+  document.querySelector("#party-time").addEventListener("mouseenter", function (e) {
+    triggerfire()
+});
+</script>
+
 <!--
   <script src="zdog.js"></script>
 <script src="/pokemon.js"></script>
