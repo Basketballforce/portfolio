@@ -21,14 +21,6 @@
     animation-delay: 1.75s;
 }
 
-.star-svg{
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  stroke-width: 2px;
-  opacity: 0;
-}
-
 
 .btn{
     border-width: 2px;
@@ -44,11 +36,6 @@
 
 .btn:hover {
   background-position: left bottom;
-}
-
-.btn:hover .star-svg{
-  opacity: 1;
-  transition: 0.5s ease-in;
 }
 
 .btn:focus,.btn:active{
