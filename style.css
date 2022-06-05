@@ -75,6 +75,10 @@
     font-size: 85px;
 }
 
+#skillz{
+  font-size: 85px;
+}
+
 .center-card{
     margin: auto;
     width: fit-content;
@@ -88,9 +92,16 @@
     background: rgba( 255, 255, 255, 0.34 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    border-radius: 50px;
     width: 80%;
     /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
+
+.glassy-white-nav{
+  background: rgb(255 255 255 / 0%) !important;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
 
 .orange-purple-grad{
@@ -104,6 +115,10 @@
 
 .skillz-font{
   font-size: 3rem;
+}
+
+.spacer{
+  margin: 15rem;
 }
 /*#progress-bar{
     position: fixed;
@@ -125,6 +140,25 @@
 	        animation: wobble-hor-bottom 1.5s ease-in-out both;
     
 }
+
+@media (max-width: 900px) { 
+  .nav-btn{
+    margin-bottom: 1rem;
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 0.375rem;
+  }
+  #theme-toggle{
+    margin-left: 0.5rem !important;
+  }
+ }
+
+ @media (max-width: 770px) { 
+  .nav-btn{
+
+  }
+ }
 
 .wobble-hor-bottom{
     will-change: auto;
@@ -201,9 +235,9 @@
   border: solid white;
   margin-top: 5%;
   padding: 150px 50px 150px 50px;
-  background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
-  background: linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+  background-image: url(./background3.png);
   border-radius: 10px;
+  background-size: cover;
 }
 
 .integration-details {
@@ -243,6 +277,7 @@
 
 #integration-1 {
   right: 65%;
+  animation-direction: reverse;
 }
 
 #integration-1>img {
@@ -254,7 +289,7 @@
 #integration-2 {
   top: 65%;
   left: 65%;
-  animation-delay: 2s;
+  animation-duration: 6.5s;
 }
 
 #integration-2>img {
@@ -266,7 +301,7 @@
 #integration-3 {
   bottom: 65%;
   right: 65%;
-  animation-delay: 2s;
+  animation-duration: 5.5s;
 }
 
 #integration-3>img {
@@ -278,7 +313,8 @@
 #integration-4 {
   bottom: 65%;
   left: 65%;
-  animation-delay: 2s;
+  animation-duration:5.75s;
+  animation-direction: reverse;
 }
 
 #integration-4>img {
@@ -290,7 +326,6 @@
 #integration-5 {
   bottom: 75%;
   left: 42%;
-  animation-delay: 2s;
 }
 
 #integration-5>img {
