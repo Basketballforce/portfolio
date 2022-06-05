@@ -18,11 +18,16 @@
 </head>
 
 <body class="bg-dark text-light">
-  <nav class="navbar sticky-top glassy-white-nav navbar-dark bg-dark border-bottom border-white">
-    <div class="container">
+  <nav class="navbar navbar-expand-md sticky-top glassy-white-nav navbar-dark bg-dark border-bottom border-white">
+    <div class="container-fluid flex-wrap">
       <a class="navbar-brand" href="/">
         <span class="fs-2 poppins top-slide">👋 John Möeder</span>
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
       <span class="d-flex flex-wrap justify-content-center">
         <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
         <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button>
@@ -30,8 +35,8 @@
         <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
         <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="theme-toggle"> <i data-feather="moon"></i></button>
       </span>
-
-
+        </div>
+      </div>
     </div>
   </nav>
 
