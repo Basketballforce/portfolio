@@ -18,22 +18,19 @@
 </head>
 
 <body class="bg-dark text-light">
-  <nav class="navbar sticky-top navbar-dark bg-dark border-bottom border-white">
+  <nav class="navbar sticky-top glassy-white-nav navbar-dark bg-dark border-bottom border-white">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <!-- <canvas class="canvas" id="canvas" width="240" height="240"></canvas> -->
         <span class="fs-2 poppins top-slide">👋 John Möeder</span>
       </a>
-      <span>
-        <button class="btn btn-lg btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
-        <button class="btn btn-lg btn-about btn-outline-light mx-2 poppins"></button>
-        <button class="btn btn-lg btn-outline-light mx-2 poppins">🗑️ Work</button>
-        <button class="btn btn-lg btn-contact btn-outline-light mx-2 poppins"></button>
+      <span class="d-flex flex-wrap justify-content-center">
+        <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
+        <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button>
+        <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>
+        <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
+        <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="theme-toggle"> <i data-feather="moon"></i></button>
       </span>
 
-      <button class="btn btn-lg btn-outline-light"> <i data-feather="moon"></i>
-
-      </button>
 
     </div>
   </nav>
@@ -47,14 +44,16 @@
     </h1>
   </div>
 
-  <h3 class="text-center poppins fade-in"><span class="gradient-text">Welcome to my site</span> <span id="party-time">🥳</span></h3>
+  <h3 class="text-center poppins fade-in mb-5"><span class="gradient-text">Welcome to my site</span> <span id="party-time">🥳</span></h3>
+
+  <div class="spacer"></div>
 
   <div class="mt-5 center-card">
-    <h1 class="text-center poppins gradient-text">SKILLS</h1>
+    <h1 class="text-center poppins gradient-text mt-5" id="skillz">SKILLS</h1>
   </div>
   <h3 class="text-center poppins fade-in"><span class="gradient-text">To pay the bills</span> <span>💸</span></h3>
 
-  <div class="integration-container mb-5">
+  <div data-tilt class="integration-container mb-5">
     <p class="center-logo text-center poppins skillz-font glassy-white">COOL SKILLZ</p>
 
     <span class="integration" id="integration-1">
@@ -160,13 +159,12 @@ fire(0.1, {
   document.querySelector("#party-time").addEventListener("mouseenter", function (e) {
     triggerfire()
 });
+
+window.onload = function(){ 
+  setTimeout(function() { triggerfire(); }, 1000);
+}
 </script>
 
-<!--
-  <script src="zdog.js"></script>
-<script src="/pokemon.js"></script>
-<script src="/progress.js"></script>
--->
 
 <script>
   feather.replace()
