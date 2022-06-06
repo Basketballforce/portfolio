@@ -20,11 +20,9 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
 // Get the user's theme preference from local storage, if there
 const currentTheme = localStorage.getItem("theme")
 
-
 /////// Check for theme on intial page load (local storage or os/browser preference) /////////
 
 // run on page load
-window.onload = function(){ 
   // 1. if the user has a set mode in their local storage use it
   if (currentTheme == "dark") {
     sunMoon.innerHTML = sun
@@ -47,7 +45,6 @@ window.onload = function(){
     sunMoon.innerHTML = moon
     cssSheet.href = "light-style.css"
   }
-};
 
 
 ///////// Handle icon click events/requests to change the mode to light or dark //////////
@@ -56,9 +53,8 @@ window.onload = function(){
 // Minor optimization of # of resize calls can be done with throttle wrapper around 
 // After testing, didn't seem worth it
 sunMoon.addEventListener("click", function() {
-  console.log("clicked")
   // If light mode is already set as the href, then change it to dark mode
-  if (!cssSheet.href.includes("style.css")) {
+  if (!cssSheet.href.includes("light")) {
     sunMoon.innerHTML = moon
     cssSheet.href = "light-style.css"
     var theme = 'light'
