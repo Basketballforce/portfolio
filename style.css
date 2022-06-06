@@ -2,6 +2,10 @@
     width: 250px;
 }
 
+.background-dark{
+  background-color: #212529;
+}
+
 .top-slide{
     -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320,  0.77) both;
     animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320,  0.77) both;
@@ -118,7 +122,7 @@
     height: 32px;
 }
 
-#sunMoon{
+#sunMoon > svg{
   will-change: auto;
 }
 
@@ -151,7 +155,7 @@
   .nav-btn{
     margin-bottom: 1rem;
   }
-  #theme-toggle{
+  #sunMoon{
     margin-left: 0.5rem !important;
   }
  }
