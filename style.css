@@ -71,6 +71,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: URL('./Poppins-ExtraBold.ttf') format('truetype');
+}
+
 #hellothere{
     font-size: 85px;
 }
@@ -113,9 +118,6 @@
     height: 32px;
 }
 
-.skillz-font{
-  font-size: 3rem;
-}
 
 .spacer{
   margin: 15rem;
@@ -150,11 +152,25 @@
   }
  }
 
- @media (max-width: 770px) { 
-  .nav-btn{
-
+ @media (max-width: 520px) { 
+  .skillz-font{
+    width: 100%;
   }
  }
+
+ @media (min-width: 900px) { 
+  .skillz-font{
+    font-size: 3rem !important;
+  }  
+ }
+
+ /*
+ @media (max-width: 848) { 
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+ }*/
 
 .wobble-hor-bottom{
     will-change: auto;
