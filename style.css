@@ -2,6 +2,13 @@
     width: 250px;
 }
 
+body{
+  background: url(./background2.png);
+  background-blend-mode: soft-light;
+  background-color: #212529;
+  background-size: cover;
+}
+
 .background-dark{
   background-color: #212529;
 }
@@ -344,7 +351,7 @@
 }
 
 #integration-5 {
-  bottom: 75%;
+  bottom: 70%;
   left: 42%;
 }
 
@@ -611,4 +618,48 @@
           opacity: 1;
       }
       
+  }
+
+
+
+   
+ .marquee-wrapper {
+	overflow-x: hidden;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  .marquee-wrapper::-webkit-scrollbar { /* WebKit */
+	width: 0;
+	height: 0;
+}
+
+  .marquee {
+	display: flex;
+	animation-name: marquee;
+	animation-duration: 20s;
+	animation-direction: alternate;
+	/* could change to use one direction for animation-directiona and just duplicate elements a ton */
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform: translateX(0);
+  }
+
+  
+  @keyframes marquee {
+	from {transform: translateX(0);}
+	to {transform: translateX(-100%);}
+  }
+
+
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    height: 1%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 1;
   }

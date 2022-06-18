@@ -37,6 +37,7 @@
     </div>
   </nav>
 
+  <div class="progress-bar" id="progressBar"></div>
 
   <div class="mt-5 center-card">
     <h1 class="text-center poppins fade-in" id="hellothere"> <span class="gradient-text">HELLO THERE</span>
@@ -50,12 +51,12 @@
 
   <div class="spacer"></div>
 
-  <div class="mt-5 center-card">
+  <div class="mt-5 center-card pb-3">
     <h1 class="text-center poppins gradient-text mt-5" id="skillz">SKILLS</h1>
   </div>
   <h3 class="text-center poppins fade-in"><span class="gradient-text">To pay the bills</span> <span>💸</span></h3>
 
-  <div data-tilt class="integration-container mb-5">
+  <div data-tilt data-tilt-scale="1.1" class="integration-container mb-5">
     <p class="center-logo text-center poppins skillz-font fs-1 glassy-white">COOL SKILLZ</p>
 
     <span class="integration" id="integration-1">
@@ -111,6 +112,8 @@
 
   </div>
 
+
+<div class="mt-3"></div>
 
 </body>
 
@@ -171,6 +174,41 @@ window.onload = function(){
 
 <script>
   feather.replace()
+</script>
+
+<script>
+
+// throttle scroll limiter
+// wait is in milliseconds
+function throttle( fn, wait ){
+    let lastCall = 0;
+      return function(){
+      if( Date.now() - lastCall > wait  ){
+        lastCall = Date.now()
+        fn()
+      }
+    }
+  }
+
+  // When the user scrolls the page, change progress bar width
+document.addEventListener('scroll', throttle( progressWidth, 15 ) )
+    // change scrollbar width when resizing
+    window.addEventListener('resize', function(event) {
+        progressWidth()
+    })
+
+document.addEventListener("DOMContentLoaded", () => {
+  progressWidth()
+})
+
+function progressWidth() {
+  let scrollTop = window.scrollY;
+  let docHeight = document.body.offsetHeight;
+  let winHeight = window.innerHeight;
+  let scrollPercent = scrollTop / (docHeight - winHeight);
+  let scrolled = Math.round(scrollPercent * 100);
+  document.getElementById("progressBar").style.width = scrolled + 3 + "%";
+}
 </script>
 
 </html>
