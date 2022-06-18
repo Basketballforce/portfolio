@@ -95,6 +95,10 @@ body{
   font-size: 85px;
 }
 
+.large-font{
+  font-size: 85px;
+}
+
 .center-card{
     margin: auto;
     width: fit-content;
@@ -171,12 +175,21 @@ body{
   .skillz-font{
     width: 100%;
   }
+  #experience{
+    font-size: 60px;
+  }
  }
 
  @media (min-width: 900px) { 
   .skillz-font{
     font-size: 3rem !important;
   }  
+ }
+
+ @media (max-width: 400px) {
+  #experience{
+    font-size: 40px;
+  }
  }
 
  /*
@@ -630,4 +643,12 @@ body{
     bottom: 0;
     opacity: 0.75;
     z-index: 1;
+    border-radius: 50px;
+  }
+
+  #me{
+    border-radius: 50%;
+    background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+    padding: 0.3rem;
+    width: 13rem;
   }
