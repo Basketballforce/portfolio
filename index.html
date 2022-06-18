@@ -20,18 +20,19 @@
       <a class="navbar-brand" href="/">
         <span class="fs-2 poppins top-slide">👋 John Möeder</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
-      <span class="d-flex flex-wrap justify-content-center">
-        <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
-        <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button>
-        <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>
-        <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
-        <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="sunMoon"> <i data-feather="moon"></i></button>
-      </span>
+          <span class="d-flex flex-wrap justify-content-center">
+            <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
+            <a href="#about"> <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button> </a>
+            <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>
+            <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
+            <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="sunMoon"> <i data-feather="moon"></i></button>
+          </span>
         </div>
       </div>
     </div>
@@ -39,7 +40,7 @@
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <div class="mt-5 center-card">
+  <div class="mt-3 center-card">
     <h1 class="text-center poppins fade-in" id="hellothere"> <span class="gradient-text">HELLO THERE</span>
       <div class="onload-wobble d-inline-block">
         <p class="wobble-hor-bottom d-inline-block mb-0"> 👋</p>
@@ -47,7 +48,14 @@
     </h1>
   </div>
 
-  <h3 class="text-center poppins fade-in mb-5"><span class="gradient-text">Welcome to my site</span> <span id="party-time">🥳</span></h3>
+  <h3 class="text-center poppins fade-in mb-5"><span class="gradient-text">Welcome to my site</span> <span
+      id="party-time">🥳</span></h3>
+
+      <img class="d-block mx-auto" id="me" src="./me.jpg" alt="">
+
+      <div class="mt-5 center-card pb-3" id="about">
+        <h1 class="text-center poppins gradient-text mt-5 large-font">ABOUT ME</h1>
+      </div>
 
   <div class="spacer"></div>
 
@@ -112,8 +120,36 @@
 
   </div>
 
+  <div class="mt-5 center-card pb-3" id="skilllist">
+    <h1 class="text-center poppins gradient-text mt-5 large-font" id="experience">Experience</h1>
+    <p class="text-center poppins gradient-text">SHINY SKILLZ UI ASIDE</p>
+  </div>
 
-<div class="mt-3"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 bg-primary">
+        mkdocs
+        material for mkdocs
+        linux/unix
+        react
+        sass
+        css
+        js
+        python
+        java
+        c++
+        Cloud
+        IT
+        Tech Repair
+        Raspberry PI
+      </div>
+      <div class="col-6 bg-primary">
+        2 of 2
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-3"></div>
 
 </body>
 
@@ -125,50 +161,50 @@
 
 <script>
 
-function triggerfire(){
-  var count = 200;
-var defaults = {
-  origin: { y: 0.7 }
-};
+  function triggerfire() {
+    var count = 200;
+    var defaults = {
+      origin: { y: 0.7 }
+    };
 
-function fire(particleRatio, opts) {
-  confetti(Object.assign({}, defaults, opts, {
-    particleCount: Math.floor(count * particleRatio)
-  }));
-}
+    function fire(particleRatio, opts) {
+      confetti(Object.assign({}, defaults, opts, {
+        particleCount: Math.floor(count * particleRatio)
+      }));
+    }
 
-fire(0.25, {
-  spread: 26,
-  startVelocity: 55,
-});
-fire(0.2, {
-  spread: 60,
-});
-fire(0.35, {
-  spread: 100,
-  decay: 0.91,
-  scalar: 0.8
-});
-fire(0.1, {
-  spread: 120,
-  startVelocity: 25,
-  decay: 0.92,
-  scalar: 1.2
-});
-fire(0.1, {
-  spread: 120,
-  startVelocity: 45,
-});
+    fire(0.25, {
+      spread: 26,
+      startVelocity: 55,
+    });
+    fire(0.2, {
+      spread: 60,
+    });
+    fire(0.35, {
+      spread: 100,
+      decay: 0.91,
+      scalar: 0.8
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
 
-}
+  }
 
   document.querySelector("#party-time").addEventListener("mouseenter", function (e) {
     triggerfire()
-});
+  });
 
-window.onload = function(){ 
-  setTimeout(function() { triggerfire(); }, 1000);
-}
+  window.onload = function () {
+    setTimeout(function () { triggerfire(); }, 1000);
+  }
 </script>
 
 
@@ -178,12 +214,12 @@ window.onload = function(){
 
 <script>
 
-// throttle scroll limiter
-// wait is in milliseconds
-function throttle( fn, wait ){
+  // throttle scroll limiter
+  // wait is in milliseconds
+  function throttle(fn, wait) {
     let lastCall = 0;
-      return function(){
-      if( Date.now() - lastCall > wait  ){
+    return function () {
+      if (Date.now() - lastCall > wait) {
         lastCall = Date.now()
         fn()
       }
@@ -191,24 +227,24 @@ function throttle( fn, wait ){
   }
 
   // When the user scrolls the page, change progress bar width
-document.addEventListener('scroll', throttle( progressWidth, 15 ) )
-    // change scrollbar width when resizing
-    window.addEventListener('resize', function(event) {
-        progressWidth()
-    })
+  document.addEventListener('scroll', throttle(progressWidth, 15))
+  // change scrollbar width when resizing
+  window.addEventListener('resize', function (event) {
+    progressWidth()
+  })
 
-document.addEventListener("DOMContentLoaded", () => {
-  progressWidth()
-})
+  document.addEventListener("DOMContentLoaded", () => {
+    progressWidth()
+  })
 
-function progressWidth() {
-  let scrollTop = window.scrollY;
-  let docHeight = document.body.offsetHeight;
-  let winHeight = window.innerHeight;
-  let scrollPercent = scrollTop / (docHeight - winHeight);
-  let scrolled = Math.round(scrollPercent * 100);
-  document.getElementById("progressBar").style.width = scrolled + 3 + "%";
-}
+  function progressWidth() {
+    let scrollTop = window.scrollY;
+    let docHeight = document.body.offsetHeight;
+    let winHeight = window.innerHeight;
+    let scrollPercent = scrollTop / (docHeight - winHeight);
+    let scrolled = Math.round(scrollPercent * 100);
+    document.getElementById("progressBar").style.width = scrolled + 3 + "%";
+  }
 </script>
 
 </html>
