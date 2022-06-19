@@ -26,7 +26,7 @@ const currentTheme = localStorage.getItem("theme")
   // 1. if the user has a set mode in their local storage use it
   if (currentTheme == "dark") {
     sunMoon.innerHTML = sun
-    cssSheet.href = "style.css"
+    cssSheet.href = "empty.css"
 
   // 2. Otherwise check if light mode is set in localstorage
   } else if (currentTheme=="light"){
@@ -38,7 +38,7 @@ const currentTheme = localStorage.getItem("theme")
   // could remove os/browser checks as desired and just default to light in above step 2
   else if (prefersDarkScheme.matches==true){
     sunMoon.innerHTML = sun
-    cssSheet.href = "style.css"
+    cssSheet.href = "empty.css"
   }
   // 4. default to light mode
   else {
@@ -62,7 +62,7 @@ sunMoon.addEventListener("click", function() {
   // otherwise the theme is currently dark and needs to change it to light mode
   } else {
     sunMoon.innerHTML = sun
-    cssSheet.href = "style.css"
+    cssSheet.href = "empty.css"
     var theme = 'dark'
   }
   // Lastly, save the  current preference to localStorage to keep using it on new page requests/other pages
