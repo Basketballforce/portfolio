@@ -3,7 +3,7 @@
 }
 
 body{
-  background: url(./background2.png);
+  background: url(./images/background2.png);
   background-blend-mode: soft-light;
   background-color: #212529;
   background-size: cover;
@@ -153,6 +153,7 @@ body{
 .gradient-text{
     background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -275,7 +276,7 @@ body{
   border: solid white;
   margin-top: 5%;
   padding: 150px 50px 150px 50px;
-  background-image: url(./background3.png);
+  background-image: url(./images/background3.png);
   border-radius: 10px;
   background-size: cover;
 }
@@ -374,6 +375,32 @@ body{
   padding: 15px;
 }
 
+.exp-text{
+  border-radius: 50%;
+  padding: .2rem;
+}
+
+.exp-text-selected{
+  background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.exp-logo{
+  height: 5rem;
+  width: 5rem;
+  padding: 1.25rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  object-fit: contain;
+}
+
+.exp-logo:hover{
+  background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+  transform: scale(1.1);
+  border: solid white;
+  transition: 0.3s;
+  padding: .5rem;
+}
 
 @keyframes circular {
   from {
