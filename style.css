@@ -170,6 +170,13 @@ body{
   #sunMoon{
     margin-left: 0.5rem !important;
   }
+  .exp-logo{
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  .exp-font{
+    font-size: 85%;
+  }
  }
 
  @media (max-width: 520px) { 
@@ -392,14 +399,15 @@ body{
   border-radius: 50%;
   transition: 0.3s;
   object-fit: contain;
+  filter: grayscale();
 }
 
 .exp-logo:hover{
   background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
   transform: scale(1.1);
-  border: solid white;
   transition: 0.3s;
   padding: .5rem;
+  filter: none !important;
 }
 
 @keyframes circular {
