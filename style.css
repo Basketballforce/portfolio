@@ -449,6 +449,25 @@ body{
   border: white solid;
 }
 
+.exp-logo-float{
+  background: -webkit-linear-gradient(43deg, #ffb375 0%, #f8f9fa 46%, #FFCC70 100%);
+  transform: scale(1.1);
+  filter: none !important;
+  border: white solid;
+  height: 3rem;
+  position: absolute;
+  width: 3rem;
+  right: 15px;
+  top: 10px;
+  padding: 0.25rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  object-fit: contain;
+  animation: spin;
+  animation-duration: 1.5s;
+}
+
 
 @keyframes circular {
   from {
@@ -707,6 +726,15 @@ body{
       }
       
   }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg) scale(1.1);
+    }
+    to {
+        transform:rotate(360deg) scale(1.1);
+    }
+}
 
   
   /* The progress bar (scroll indicator) */
