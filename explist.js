@@ -34,11 +34,11 @@ I enjoy messing with hardware and peforming common tech repairs occasionally in 
 
 var expicons = document.getElementsByClassName("exp-logo")
 var select_exp = function(){
-    console.log(this.dataset.exp)
-    for (var i = 0; i < expicons.length; i++){
-        expicons[i].classList.remove("selected-exp")
-    }
+    var selected = document.getElementById("selected-exp")
+    selected.removeAttribute("id")
+    selected.classList.remove("selected-exp")
     this.classList.add("selected-exp")
+    this.id = "selected-exp"
 
     document.getElementById("exp-desc").innerHTML=explist[this.dataset.exp]
 }
