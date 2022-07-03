@@ -19,7 +19,7 @@ Experienced with <a href="https://www.docker.com/" target="_blank">Docker</a>/<a
 
 explist.fastapi = `<h1>APIs</h1>
 <img src="./images/fastapi.png"  class="exp-logo-float" data-exp="fastapi" alt="">
-1.5+ Years using <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> to build REST API's quickly. Utilized <a href="https://swagger.io/" target="_blank">OpenAPI doc standards and auto-generated Swagger docs </a> to enable quick adoption and usage of APIs. Setup and configured <a href="https://konghq.com/" target="_blank">Kong API gateway</a> to manage microservices and external access.
+1.5+ Years using <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> to build REST API's quickly. Utilized <a href="https://swagger.io/" target="_blank">OpenAPI standards and auto-generated Swagger documentation </a> to enable quick adoption and usage of APIs. Setup and configured <a href="https://konghq.com/" target="_blank">Kong API gateway</a> to manage microservices and external access.
 </div>`
 
 explist.linux = `<h1>Linux/Unix</h1>
@@ -29,7 +29,7 @@ Well versed in Linux development environments and desktop environments. Personal
 
 explist.repair = `<h1>Tech Repair</h1>
 <img src="./images/fixit.png"  class="exp-logo-float" data-exp="repair" alt="">
-2.5+ years developing with <a href="https://www.python.org/" target="_blank">Python</a>. Includes backend development with a specific focus on API development, forensics, data wrangling, automation, database management, authentication and more.
+I enjoy messing with hardware and peforming common tech repairs occasionally in my free time. Recently, I did a screen replacement for an Iphone 11 but, my repair and maintenance experience spans laptops, desktops, mobile and gaming consoles. I get a lot of great info, repair guides and higher quality parts from <a href="https://www.ifixit.com/" target="_blank">iFixit</a>.
 </div>`
 
 var expicons = document.getElementsByClassName("exp-logo")
