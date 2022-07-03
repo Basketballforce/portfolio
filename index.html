@@ -17,6 +17,7 @@
 </head>
 
 <body class="background-dark text-light">
+  <span id="home"></span>
   <nav class="navbar navbar-expand-lg sticky-top glassy-white-nav navbar-dark border-bottom border-white">
     <div class="container-fluid flex-wrap">
       <a class="navbar-brand" href="/">
@@ -29,9 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
           <span class="d-flex flex-wrap justify-content-center">
-            <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button>
+            <a href="#home"> <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins slide-right">🏠 Home</button></a>
             <a href="#about"> <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button> </a>
-            <button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>
+            <a href="#skillz-link"><button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">⚡ Skills</button></a>
+            <!--<button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>-->
             <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
             <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="sunMoon"> <i data-feather="moon"></i></button>
           </span>
@@ -61,7 +63,7 @@
 
   <div class="spacer"></div>
 
-  <div class="mt-5 center-card pb-3">
+  <div class="mt-5 center-card pb-3" id="skillz-link">
     <h1 class="text-center poppins gradient-text mt-5" id="skillz">SKILLS</h1>
   </div>
   <h3 class="text-center poppins fade-in"><span class="gradient-text">To pay the bills</span> <span>💸</span></h3>
