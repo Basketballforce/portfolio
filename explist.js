@@ -32,6 +32,16 @@ explist.repair = `<h1>Tech Repair</h1>
 I enjoy messing with hardware and peforming common tech repairs occasionally in my free time. Recently, I did a screen replacement for an Iphone 11 but, my repair and maintenance experience spans laptops, desktops, mobile and gaming consoles. I get a lot of great info, repair guides and higher quality parts from <a href="https://www.ifixit.com/" target="_blank">iFixit</a>.
 </div>`
 
+explist.react = `<h1>React</h1>
+<img src="./images/react.png"  class="exp-logo-float" data-exp="repair" alt="">
+I have currently been learning <a href="https://reactjs.org/" target="_blank">React</a> in my spare time. Will likely switch over to  <a href="https://svelte.dev/" target="_blank">Svelte</a> and see how it compares once I get my head around React. Although, I still think a lot of frontend tech is overenginneered.
+</div>`
+
+explist.frontend = `<h1>Frontend</h1>
+<img src="./images/frontend.png"  class="exp-logo-float" data-exp="repair" alt="">
+sass css js
+</div>`
+
 var expicons = document.getElementsByClassName("exp-logo")
 var select_exp = function(){
     var selected = document.getElementById("selected-exp")
