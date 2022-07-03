@@ -188,6 +188,12 @@ body{
   }
  }
 
+ @media (max-width: 575.98px) {
+  .exp-description{
+    max-width: 95%;
+  }
+ }
+
  @media (min-width: 900px) { 
   .skillz-font{
     font-size: 3rem !important;
@@ -331,6 +337,7 @@ body{
 #integration-1>img {
   height: 120px;
   width: 120px;
+  padding: 5px;
 }
 
 
