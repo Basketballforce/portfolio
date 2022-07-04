@@ -194,6 +194,19 @@ body{
   }
  }
 
+ @media (max-width: 393px) {
+  .exp-description{
+    height: 26em !important;
+  }
+ }
+
+ @media (max-width: 992px) {
+  .exp-description{
+    font-size: 1rem !important;
+    height: 17em;
+  }
+ }
+
  @media (min-width: 900px) { 
   .skillz-font{
     font-size: 3rem !important;
@@ -426,6 +439,7 @@ body{
   -webkit-backdrop-filter: blur( 4px );
   padding: 1.5rem;
   font-weight: bold;
+  font-size: 1.35rem;
 }
 
 .exp-description > a,h1{
