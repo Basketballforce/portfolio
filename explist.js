@@ -34,12 +34,32 @@ I enjoy messing with hardware and peforming common tech repairs occasionally in 
 
 explist.react = `<h1>React</h1>
 <img src="./images/react.png"  class="exp-logo-float" data-exp="repair" alt="">
-I have currently been learning <a href="https://reactjs.org/" target="_blank">React</a> in my spare time. Will likely switch over to  <a href="https://svelte.dev/" target="_blank">Svelte</a> and see how it compares once I get my head around React. Although, I still think a lot of frontend tech is overenginneered.
+I have currently been learning <a href="https://reactjs.org/" target="_blank">React</a> in my spare time. Will likely switch over to  <a href="https://svelte.dev/" target="_blank">Svelte</a> and see how it compares once I get my head around React. Even though I still think a lot of frontend tech is overenginneered, I understand its relevance and usage in today's market.
 </div>`
 
 explist.frontend = `<h1>Frontend</h1>
 <img src="./images/frontend.png"  class="exp-logo-float" data-exp="repair" alt="">
-sass css js
+sass css js bootstrap
+</div>`
+
+explist.java = `<h1>Java</h1>
+<img src="./images/java.png"  class="exp-logo-float" data-exp="repair" alt="">
+java 2+ years. First programming language
+</div>`
+
+explist.cplus = `<h1>C++</h1>
+<img src="./images/c++.png"  class="exp-logo-float" data-exp="repair" alt="">
+2.5+ years first in depth programming language
+</div>`
+
+explist.cloud = `<h1>Cloud</h1>
+<img src="./images/cloud.png"  class="exp-logo-float" data-exp="repair" alt="">
+AWS cloud environments including. AWS S3, dynamodb, EC2. Have played around with lambda and lightsail. GCP cloud compute and related service setup for dockerized external web application
+</div>`
+
+explist.it = `<h1>IT</h1>
+<img src="./images/it.png"  class="exp-logo-float" data-exp="repair" alt="">
+Wasted sanity and time fixing Windows after it bricks itself. Raspiberry pi and related projects. NAS setup, etc.
 </div>`
 
 var expicons = document.getElementsByClassName("exp-logo")
