@@ -1,3 +1,148 @@
 .background-dark{
-    background-color: white;
+    background-color: #dedad6;
+}
+
+body{
+    background: url(./images/lightbg3.png);
+    background-blend-mode: soft-light;
+    /*background-color: #c3dbf2;*/
+    background-size: cover;
+  }
+
+.navbar{
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand{
+    --bs-navbar-brand-color: #000;
+}
+
+.navbar-brand:hover{
+    --bs-navbar-brand-hover-color: #000;
+}
+
+.navbar-toggler{
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.nav-btn{
+    color: var(--bs-btn-color);
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    --bs-btn-color: #070605;
+    --bs-btn-border-color: #070605;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #070605;
+    --bs-btn-hover-border-color: #070605;
+    --bs-btn-focus-shadow-rgb: 7,6,5;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #070605;
+    --bs-btn-active-border-color: #070605;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.125);
+    --bs-btn-disabled-color: #070605;
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: 0.5rem;
+}
+
+
+.btn{
+    border-width: 2px;
+    -webkit-animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    animation-delay: 0.5;
+    background: linear-gradient(to right, black 50%, rgb(228, 228, 228) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    color: #000;
+}
+
+
+.btn:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.btn:focus,.btn:active{
+  color: black;
+}
+
+.btn:hover.btn:focus {
+  color: white;
+}
+
+.btn:hover.btn:active {
+  color: white;
+}
+
+
+.btn-about:after{
+    content:'🏀 About';
+}
+.btn-about:hover:after{
+    animation: changeBall 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.btn-contact:after{
+    content:'🤙 Contact';
+}
+.btn-contact:hover:after{
+    animation: changePhone 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.text-light{
+    --bs-light-rgb: 7,6,5;
+}
+
+.selected-exp{
+    border-color: #000;
+}
+
+.selected-exp:hover{
+    border-color: #000;
+}
+
+.exp-logo-float{
+    border-color: #000;
+}
+
+.exp-description{
+    border-color: #000;
+}
+
+
+.glassy-white{
+    background: rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    width: 80%;
+    /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
+
+.glassy-white-nav{
+  background: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
