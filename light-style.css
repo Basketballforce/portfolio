@@ -68,7 +68,7 @@ body{
     -webkit-animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
     animation: slide-in-right 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
     animation-delay: 0.5;
-    background: linear-gradient(to right, black 50%, rgb(228, 228, 228) 50%);
+    background: linear-gradient(to right, black 50%, rgb(255, 255, 255) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
@@ -128,11 +128,12 @@ body{
 
 .exp-description{
     border-color: #000;
+    background: #ffffffa7;
 }
 
 
 .glassy-white{
-    background: rgba(0, 0, 0, 0.34);
+    background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
@@ -146,3 +147,23 @@ body{
   -webkit-backdrop-filter: blur( 4px );
   /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
+
+nav.navbar.navbar-expand-lg.sticky-top.glassy-white-nav.navbar-dark.border-bottom.border-white{
+    border-color: #000 !important;
+}
+
+
+.integration-container {
+    border-color:black;
+    background-image: url(./images/lightbg2.png);
+    color: white;
+  }
+
+  .integration:hover>img{
+    transform: scale(1.3);
+    transition: ease .5s;
+    border-color: #000;
+    background: #ffffff40;
+    border-width: 3px;
+    box-shadow: 0 0 20px -3px #173647c9;
+  }
