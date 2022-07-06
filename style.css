@@ -77,6 +77,43 @@ body{
     animation: changePhone 0.5s linear;
     animation-fill-mode: forwards;
 }
+/*
+.natureshot{
+  border-radius: 10px;
+  background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+  padding: 4px;
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}*/
+
+.natureshot{
+  border-radius: 10px;
+  background: -webkit-linear-gradient(281deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+  padding: 4px;
+  height: 150%;
+  width: 80%;
+  left: 10%;
+  top: -25%;
+  filter: grayscale(1);
+  transition: 1s ease;
+  object-fit: cover;
+  z-index: -1;
+  margin: auto;
+  display: block;
+  position: absolute;
+}
+
+#aboutme:hover > img{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.p-relative{
+  position: relative;
+}
 
 .poppins{
     font-family: 'Poppins', sans-serif;
@@ -101,7 +138,6 @@ body{
 
 .center-card{
     margin: auto;
-    width: fit-content;
     padding: 30px;
     border-radius: 10px;
     border-width: 2px !important;
@@ -176,6 +212,10 @@ body{
   }
   .exp-font{
     font-size: 85%;
+  }
+  .natureshot{
+    width: 100%;
+    left: 0%;
   }
  }
 
