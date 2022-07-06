@@ -1,3 +1,13 @@
 how this site is made
 who I follow
 about me extended
+work experience
+
+How this site is made/credits
+- Backgrounds https://pattern.monster/memphis-3/
+- Tilt/skillz ui tilt
+- Confetti
+- http://animista.net
+- Bootstrap
+- Icons: Feather js
+- 
