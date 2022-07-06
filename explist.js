@@ -8,7 +8,7 @@ static site generator. As of lately, been using the <a href="https://squidfunk.g
 
 explist.python = `<h1>Python</h1>
 <img src="./images/python.png"  class="exp-logo-float" data-exp="python" alt="">
-2.5+ years developing with <a href="https://www.python.org/" target="_blank">Python</a>. Includes backend development with a specific focus on API development, forensics, data wrangling, automation, database management, authentication and more.
+2.5+ years developing with <a href="https://www.python.org/" target="_blank">Python</a>. Includes frontend and backend development with a specific focus on API development, forensics, data wrangling, automation, database management, authentication and more.
 </div>`
 
 explist.containers = `<h1>Containers</h1>
@@ -39,7 +39,8 @@ I have currently been learning <a href="https://reactjs.org/" target="_blank">Re
 
 explist.frontend = `<h1>Frontend</h1>
 <img src="./images/frontend.png"  class="exp-logo-float" data-exp="repair" alt="">
-sass css js bootstrap
+2+ years in frontend development. Worked with previous tooling such as Bootstrap, Tailwind, SASS/SCSS, Postcss, Webpack, Pug  Eslint, etc.
+Pugsass css js bootstrap
 </div>`
 
 explist.java = `<h1>Java</h1>
@@ -59,7 +60,7 @@ AWS cloud environments including. AWS S3, dynamodb, EC2. Have played around with
 
 explist.it = `<h1>IT</h1>
 <img src="./images/it.png"  class="exp-logo-float" data-exp="repair" alt="">
-Wasted sanity and time fixing Windows after it bricks itself. Raspiberry pi and related projects. NAS setup, etc.
+Wasted sanity and time fixing Windows after it bricks itself. Raspiberry pi and related projects. NAS setup, etc. Currently I hold a Security+ cert
 </div>`
 
 var expicons = document.getElementsByClassName("exp-logo")
