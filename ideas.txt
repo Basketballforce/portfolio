@@ -11,3 +11,6 @@ How this site is made/credits
 - Bootstrap
 - Icons: Feather js
 - 
+
+Adding an animation to my welcome images breaks lighthouse's performance score lol
+ <img class="d-block mx-auto" id="me" src="./images/me.jpg" alt="">
