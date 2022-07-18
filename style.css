@@ -547,6 +547,24 @@ body{
   animation: fade-in-bottom 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
+
+.swiper {
+  width: 90%;
+  height: 300px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+  }  
+
+.swiper-slide{
+  will-change: transform;
+}
+
+.swiper-slide:hover{
+  color: red;
+}
+
 @keyframes fade-in-bottom{
   0%{
     opacity: 0%;
