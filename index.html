@@ -232,17 +232,20 @@
   </div>
 
     <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="mt-5 center-card pb-3 scroll-container scroll-element js-scroll" id="skilllist">
+      <h1 class="text-center poppins gradient-text mt-5 large-font" id="experience">Built With</h1>
+      <p class="text-center poppins gradient-text">POWERED BY FOSS</p>
+    </div>
+  
+    <div class="swiper built-with">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide"> <a href="https://getbootstrap.com/"> <img class="swiper-img " src="./images/bootstrap.png" alt=""></div></a>
+        <div class="swiper-slide"> <a href="https://pattern.monster/"> <img class="swiper-img img-invert" src="./images/patternMonster.png" alt="" srcset=""></div> </a>
+        <div class="swiper-slide"> <a href="https://micku7zu.github.io/vanilla-tilt.js/"> <img class="swiper-img" src="./images/tilt.png" alt="" srcset=""></div> </a> 
+        <div class="swiper-slide"> <a href="https://feathericons.com/"> <img class="swiper-img img-invert" src="./images/feather.png" alt="" srcset=""></div> </a>
+        <div class="swiper-slide"> <a href="https://www.kirilv.com/canvas-confetti/"> <img class="swiper-img " src="./images/canvasConfetti.jpeg" alt="" srcset=""></div> </a>
+        <div class="swiper-slide"> <a href="https://animista.net/"> <img class="swiper-img " src="./images/animsta.png" alt="" srcset=""></div> </a>
+        <div class="swiper-slide"><img class="swiper-img img-invert" src="./images/heart.png" alt="" srcset=""></div>
       </div>
     </div>
 
@@ -349,26 +352,34 @@
 
    <!-- Initialize Swiper -->
    <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".built-with", {
       spaceBetween: 30,
       loop: true,
       slidesPerView: 5,
       slideToClickedSlide: true,
       centeredSlides: true,
-      speed:5000,
+      speed:3500,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
     });
+
+    /*
+           responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }]
+        */
   </script>
 </script>
 
