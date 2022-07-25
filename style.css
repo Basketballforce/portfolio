@@ -550,7 +550,7 @@ body{
 
 .swiper {
   width: 90%;
-  height: 300px;
+  height: 11rem;
 }
 
 .swiper-wrapper {
@@ -559,10 +559,29 @@ body{
 
 .swiper-slide{
   will-change: transform;
+  margin: 1rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 
 .swiper-slide:hover{
   color: red;
+}
+
+.swiper-img{
+  height: 10rem;
+  width: 10rem;
+  transition: 0.3s;
+  object-fit: contain;
+  stroke: white;
+}
+
+.swiper-slide:hover .swiper-img{
+  transform: scale(1.25);
+}
+
+.img-invert{
+  filter: invert(1);
 }
 
 @keyframes fade-in-bottom{
