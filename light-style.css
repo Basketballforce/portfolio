@@ -167,3 +167,7 @@ nav.navbar.navbar-expand-lg.sticky-top.glassy-white-nav.navbar-dark.border-botto
     border-width: 3px;
     box-shadow: 0 0 20px -3px #173647c9;
   }
+
+  .img-invert{
+    filter: invert(0);
+  }
