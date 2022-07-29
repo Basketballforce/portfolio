@@ -262,126 +262,15 @@
 <script src="/scroll.js"></script>
 <script src="/swiper.min.js"></script>
 
-<script>
-
-  function triggerfire() {
-    var count = 200;
-    var defaults = {
-      origin: { y: 0.7 }
-    };
-
-    function fire(particleRatio, opts) {
-      confetti(Object.assign({}, defaults, opts, {
-        particleCount: Math.floor(count * particleRatio)
-      }));
-    }
-
-    fire(0.25, {
-      spread: 26,
-      startVelocity: 55,
-    });
-    fire(0.2, {
-      spread: 60,
-    });
-    fire(0.35, {
-      spread: 100,
-      decay: 0.91,
-      scalar: 0.8
-    });
-    fire(0.1, {
-      spread: 120,
-      startVelocity: 25,
-      decay: 0.92,
-      scalar: 1.2
-    });
-    fire(0.1, {
-      spread: 120,
-      startVelocity: 45,
-    });
-
-  }
-
-  document.querySelector("#party-time").addEventListener("mouseenter", function (e) {
-    triggerfire()
-  });
-
-  window.onload = function () {
-    setTimeout(function () { triggerfire(); }, 1000);
-  }
-</script>
-
+<!--Custom Logic/Driver Logic for imported liibrary's below. Custom logic also includes scroll, explist and toggletheme js scripts imported above-->
+<script src="confetti.js"></script>
 
 <script>
   feather.replace()
 </script>
 
-<script>
+<script src="/progress.js"></script>
 
-  // throttle scroll limiter
-  // wait is in milliseconds
-  function throttle(fn, wait) {
-    let lastCall = 0;
-    return function () {
-      if (Date.now() - lastCall > wait) {
-        lastCall = Date.now()
-        fn()
-      }
-    }
-  }
-
-  // When the user scrolls the page, change progress bar width
-  document.addEventListener('scroll', throttle(progressWidth, 15))
-  // change scrollbar width when resizing
-  window.addEventListener('resize', function (event) {
-    progressWidth()
-  })
-
-  document.addEventListener("DOMContentLoaded", () => {
-    progressWidth()
-  })
-
-  function progressWidth() {
-    let scrollTop = window.scrollY;
-    let docHeight = document.body.offsetHeight;
-    let winHeight = window.innerHeight;
-    let scrollPercent = scrollTop / (docHeight - winHeight);
-    let scrolled = Math.round(scrollPercent * 100);
-    document.getElementById("progressBar").style.width = scrolled + 3 + "%";
-  }
-</script>
-
-   <!-- Initialize Swiper -->
-   <script>
-    var swiper = new Swiper(".built-with", {
-      spaceBetween: 30,
-      loop: true,
-      slidesPerView: 5,
-      slideToClickedSlide: true,
-      centeredSlides: true,
-      speed:3500,
-      longSwipes: false,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-    });
-
-    /*
-           responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                slidesToShow: 1
-            }
-        }]
-        */
-  </script>
-</script>
+<script src="swiper.driver.js"></script>
 
 </html>
