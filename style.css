@@ -576,6 +576,11 @@ body{
   stroke: white;
 }
 
+.smaller-swipe{
+  height: 9rem;
+  width: 9rem;
+}
+
 .swiper-slide:hover .swiper-img{
   transform: scale(1.25);
 }
