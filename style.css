@@ -874,11 +874,11 @@ body{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-15rem * 7));
     }
   }
   .slider {
-    height: 19rem;
+    height: 17rem;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -912,7 +912,6 @@ body{
 
   .foss-text{
     text-align: center;
-    color: white;
     opacity: 0.01;
     font-weight: bold;
     transition: 0.5s;
@@ -920,4 +919,9 @@ body{
     position: fixed;
     bottom: -1rem;
     text-transform: uppercase;
+    background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
   }
