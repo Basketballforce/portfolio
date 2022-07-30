@@ -13,8 +13,7 @@ explist.python = `<h1>Python</h1>
 
 explist.containers = `<h1>Containers</h1>
 <img src="./images/docker.png"  class="exp-logo-float" data-exp="containers" alt="">
-Experienced with <a href="https://www.docker.com/" target="_blank">Docker</a>/<a href="https://podman.io/" target="_blank">Podman</a>, virtual machines and <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>*. Created and managed docker dev environment for team and aided in Kubernetes based development. Personally uses <a href="https://virt-manager.org/" target="_blank">virt-machine</a>, podman, docker and <a href="https://www.virtualbox.org/" target="_blank">virtual box</a> for personal projects.
-*"Dangerous" with Kubernetes but still learning ;)
+Experienced with <a href="https://www.docker.com/" target="_blank">Docker</a>/<a href="https://podman.io/" target="_blank">Podman</a>, virtual machines and <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>. Created and managed docker dev environment for team and aided in Kubernetes based development. Personally uses <a href="https://virt-manager.org/" target="_blank">virt-machine</a>, podman, docker and <a href="https://www.virtualbox.org/" target="_blank">virtual box</a> for personal projects.
 </div>`
 
 explist.fastapi = `<h1>APIs</h1>
