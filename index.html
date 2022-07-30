@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="/bootstrapv5_2.css">
   <link rel="stylesheet" href="/style.css">
   <link id="theme-toggle" rel="stylesheet" href="/empty.css">
-  <link rel="stylesheet" href="swiper.min.css">
 
   <meta name="description" content="A software engineer portfolio">
 
@@ -35,7 +34,7 @@
             <a href="#about"> <button class="btn btn-lg nav-btn btn-about btn-outline-light mx-2 poppins"></button> </a>
             <a href="#skillz-link"><button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">⚡ Skills</button></a>
             <!--<button class="btn btn-lg nav-btn btn-outline-light mx-2 poppins">🗑️ Work</button>-->
-            <button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button>
+            <a href="#skillz-link"><button class="btn btn-lg nav-btn btn-contact btn-outline-light mx-2 poppins"></button></a>
             <button class="btn btn-lg btn-outline-light nav-btn ms-5" id="sunMoon"> <i data-feather="moon"></i></button>
           </span>
         </div>
@@ -230,22 +229,27 @@
       </div>
     </div>
   </div>
-
-    <!-- Swiper -->
     <div class="mt-5 center-card pb-3 scroll-container scroll-element js-scroll" id="skilllist">
       <h1 class="text-center poppins gradient-text mt-5 large-font" id="experience">Built With</h1>
       <p class="text-center poppins gradient-text">POWERED BY FOSS</p>
     </div>
   
-    <div class="swiper built-with">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"> <a href="https://getbootstrap.com/"> <img class="swiper-img " src="./images/bootstrap.png" alt=""></div></a>
-        <div class="swiper-slide"> <a href="https://pattern.monster/"> <img class="swiper-img img-invert smaller-swipe" src="./images/patternMonster.png" alt="" srcset=""></div> </a>
-        <div class="swiper-slide"> <a href="https://micku7zu.github.io/vanilla-tilt.js/"> <img class="swiper-img smaller-swipe" src="./images/tilt.png" alt="" srcset=""></div> </a> 
-        <div class="swiper-slide"> <a href="https://feathericons.com/"> <img class="swiper-img img-invert smaller-swipe" src="./images/feather.png" alt="" srcset=""></div> </a>
-        <div class="swiper-slide"> <a href="https://www.kirilv.com/canvas-confetti/"> <img class="swiper-img " src="./images/canvasConfetti.jpeg" alt="" srcset=""></div> </a>
-        <div class="swiper-slide"> <a href="https://animista.net/"> <img class="swiper-img " src="./images/animsta.png" alt="" srcset=""></div> </a>
-        <div class="swiper-slide"><img class="swiper-img img-invert" src="./images/heart.png" alt="" srcset=""></div>
+    <div class="slider built-with">
+      <div class="slide-track">
+        <div class="slide"> <a href="https://getbootstrap.com/"  target="_blank"> <img class="swiper-img " src="./images/bootstrap.png" alt=""> <h4 class="foss-text"></a>Bootstrap</h4></div>
+        <div class="slide"> <a href="https://pattern.monster/"  target="_blank"> <img class="swiper-img img-invert smaller-swipe" src="./images/patternMonster.png" alt="" srcset=""></a><h4 class="foss-text">Pattern Monster</h4></div>
+        <div class="slide"> <a href="https://micku7zu.github.io/vanilla-tilt.js/"  target="_blank"> <img class="swiper-img smaller-swipe" src="./images/tilt.png" alt="" srcset=""></a><h4 class="foss-text">Tilt Js</h4></div> 
+        <div class="slide"> <a href="https://feathericons.com/"  target="_blank"> <img class="swiper-img img-invert smaller-swipe" src="./images/feather.png" alt="" srcset=""></a><h4 class="foss-text">Feather Js</h4></div>
+        <div class="slide"> <a href="https://www.kirilv.com/canvas-confetti/"  target="_blank"> <img class="swiper-img " src="./images/canvasConfetti.jpeg" alt="" srcset=""></a><h4 class="foss-text">Canvas Confetti</h4></div>
+        <div class="slide"> <a href="https://animista.net/"  target="_blank"> <img class="swiper-img " src="./images/animsta.png" alt="" srcset=""></a><h4 class="foss-text">Animista</h4></div>
+        <div class="slide"><img class="swiper-img img-invert" src="./images/heart.png" alt="" srcset=""><h4 class="foss-text">Love 💖</h4></div>
+        <div class="slide"> <a href="https://getbootstrap.com/"  target="_blank"> <img class="swiper-img " src="./images/bootstrap.png" alt=""> <h4 class="foss-text"></a>Bootstrap</h4></div>
+        <div class="slide"> <a href="https://pattern.monster/"  target="_blank"> <img class="swiper-img img-invert smaller-swipe" src="./images/patternMonster.png" alt="" srcset=""></a><h4 class="foss-text">Pattern Monster</h4></div>
+        <div class="slide"> <a href="https://micku7zu.github.io/vanilla-tilt.js/"  target="_blank"> <img class="swiper-img smaller-swipe" src="./images/tilt.png" alt="" srcset=""></a><h4 class="foss-text">Tilt Js</h4></div> 
+        <div class="slide"> <a href="https://feathericons.com/"  target="_blank"> <img class="swiper-img img-invert smaller-swipe" src="./images/feather.png" alt="" srcset=""></a><h4 class="foss-text">Feather Js</h4></div>
+        <div class="slide"> <a href="https://www.kirilv.com/canvas-confetti/"  target="_blank"> <img class="swiper-img " src="./images/canvasConfetti.jpeg" alt="" srcset=""></a><h4 class="foss-text">Canvas Confetti</h4></div>
+        <div class="slide"> <a href="https://animista.net/"  target="_blank"> <img class="swiper-img " src="./images/animsta.png" alt="" srcset=""></a><h4 class="foss-text">Animista</h4></div>
+        <div class="slide"><img class="swiper-img img-invert" src="./images/heart.png" alt="" srcset=""><h4 class="foss-text">Love 💖</h4></div>
       </div>
     </div>
 
@@ -260,7 +264,6 @@
 <script src="/toggletheme.js"></script>
 <script src="/explist.js"></script>
 <script src="/scroll.js"></script>
-<script src="/swiper.min.js"></script>
 
 <!--Custom Logic/Driver Logic for imported liibrary's below. Custom logic also includes scroll, explist and toggletheme js scripts imported above-->
 <script src="confetti.js"></script>
@@ -270,7 +273,5 @@
 </script>
 
 <script src="/progress.js"></script>
-
-<script src="swiper.driver.js"></script>
 
 </html>
