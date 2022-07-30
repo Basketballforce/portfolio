@@ -553,24 +553,8 @@ body{
   height: 11rem;
 }
 
-.swiper-wrapper {
-  transition-timing-function: linear;
-  }  
-
-.swiper-slide{
-  will-change: transform;
-  margin: 1rem;
-  margin-left: 9rem;
-  margin-right: 9rem;
-}
-
-.swiper-slide:hover{
-  color: red;
-}
-
 .swiper-img{
-  height: 10rem;
-  width: 10rem;
+  width: 12rem;
   transition: 0.3s;
   object-fit: contain;
   stroke: white;
@@ -579,10 +563,7 @@ body{
 .smaller-swipe{
   height: 9rem;
   width: 9rem;
-}
-
-.swiper-slide:hover .swiper-img{
-  transform: scale(1.25);
+  margin-bottom: 2rem;
 }
 
 .img-invert{
@@ -885,4 +866,58 @@ body{
     background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
     padding: 0.3rem;
     width: 13rem;
+  }
+
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    height: 19rem;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(15rem * 14);
+  }
+  .slider .slide {
+    height: 12rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    width: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .slider .slide:hover {
+    transform: scale(1.25);
+  }
+
+  .slider .slide:hover > .foss-text {
+    opacity: 1;
+  }
+
+  .foss-text{
+    text-align: center;
+    color: white;
+    opacity: 0.01;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none !important;
+    position: fixed;
+    bottom: -1rem;
+    text-transform: uppercase;
   }
