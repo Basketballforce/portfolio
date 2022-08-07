@@ -191,6 +191,28 @@ body{
     background: linear-gradient(45deg, #ff0e0e, #003dff);
 }*/
 
+.contact-svg{
+  color: white;
+  width: 10rem;
+  height: 10rem;
+  transition: color 0.5s;
+}
+
+.contact-svg:hover{
+  color: rgb(254, 133, 41);
+}
+
+.contact-text{
+  color: #ffb47b;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+.contact-text:hover{
+  color: rgb(254, 133, 41);
+  text-decoration: underline;
+}
+
 .gradient-text{
     background: -webkit-linear-gradient(43deg, #2512c9 0%, #C850C0 46%, #FFCC70 100%);
     -webkit-background-clip: text;
@@ -201,6 +223,12 @@ body{
 .wobble-hor-bottom:hover {
 	-webkit-animation: wobble-hor-bottom 1.5s ease-in-out both;
 	        animation: wobble-hor-bottom 1.5s ease-in-out both;
+    
+}
+
+.callme-animation:hover {
+	-webkit-animation: callme 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	        animation: callme 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     
 }
 
@@ -236,6 +264,13 @@ body{
  @media (max-width: 575.98px) {
   .exp-description{
     max-width: 95%;
+  }
+  .contact-svg{
+    width: 4rem;
+    height: 4rem;
+  }
+  .contact-text{
+    font-size: 1rem;
   }
  }
 
@@ -488,8 +523,14 @@ body{
   position: relative;
 }
 
-.exp-description > a,h1{
-  color: #ffb47b
+.exp-description > a,.exp-description > h1{
+  color: #ffb47b;
+  text-decoration: none;
+}
+
+.exp-description > a:hover{
+  color: rgb(254, 133, 41);
+  text-decoration: underline;
 }
 
 .exp-description > h1{
@@ -724,6 +765,26 @@ body{
     }
   }
 
+  @keyframes callme {
+    0%{
+      transform: rotate(0deg);
+    }
+    15%{
+      transform: rotate(-15deg);
+    }    
+    30%{
+      transform: rotate(25deg);
+    }
+    60%{
+      transform: rotate(-15deg);
+    }
+    75%{
+      transform: rotate(25deg);
+    }    
+    100%{
+      transform: rotate(0deg);
+    }
+  }
 
   @keyframes changePhone {
     0% {
