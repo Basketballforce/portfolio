@@ -18,7 +18,7 @@ Experienced with <a href="https://www.docker.com/" target="_blank">Docker</a>/<a
 
 explist.fastapi = `<h1>APIs</h1>
 <img src="./images/fastapi.png"  class="exp-logo-float" data-exp="fastapi" alt="">
-1.5+ Years using <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> to build REST API's quickly. Utilized <a href="https://swagger.io/" target="_blank">OpenAPI standards and auto-generated Swagger documentation </a> to enable quick adoption and usage of APIs. Setup and configured <a href="https://konghq.com/" target="_blank">Kong API gateway</a> to manage microservices and external access.
+1.5+ years using <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> to build REST API's quickly. Utilized <a href="https://swagger.io/" target="_blank">OpenAPI standards and auto-generated Swagger documentation </a> to enable quick adoption and usage of APIs. Setup and configured <a href="https://konghq.com/" target="_blank">Kong API gateway</a> to manage microservices and external access. Currently, looking into service meshes such as <a href="https://istio.io/" target="_blank">Istio</a> to learn how they can be used to manage apis.
 </div>`
 
 explist.linux = `<h1>Linux/Unix</h1>
@@ -33,7 +33,7 @@ I enjoy messing with hardware and peforming common tech repairs occasionally in 
 
 explist.react = `<h1>React</h1>
 <img src="./images/react.png"  class="exp-logo-float" data-exp="repair" alt="">
-I have currently been learning <a href="https://reactjs.org/" target="_blank">React</a> in my spare time. Will likely switch over to  <a href="https://svelte.dev/" target="_blank">Svelte</a> and see how it compares once I get my head around React. Even though I still think a lot of frontend tech is overenginneered, I understand its relevance and usage in today's market.
+I have currently been learning <a href="https://reactjs.org/" target="_blank">React</a> in my spare time. Will likely switch over to  <a href="https://svelte.dev/" target="_blank">Svelte</a> and see how it compares once I get my head around React. Even though I still think a lot of frontend tech is overenginneered, I understand its relevance and usage in today's market. It is also makes life much easier when you can componetize frontend JS/CSS/HTML
 </div>`
 
 explist.frontend = `<h1>Frontend</h1>
@@ -44,12 +44,12 @@ Pugsass css js bootstrap
 
 explist.java = `<h1>Java</h1>
 <img src="./images/java.png"  class="exp-logo-float" data-exp="repair" alt="">
-java 2+ years. First programming language
+I've used Java for about 2+ years. It was the first programming language I ever used and learned! I have some experience in JavaFX application programming and Java Spring web development. I am currently looking for a good side project to pair with the language to bolster my Java toolbelt. All hail automatic garbage collection.
 </div>`
 
 explist.cplus = `<h1>C++</h1>
 <img src="./images/c++.png"  class="exp-logo-float" data-exp="repair" alt="">
-2.5+ years first in depth programming language
+2.5+ years of experience and my first in depth programming language. C++ was the core language of my computer science related coursework in college and is where I learned programming/CS concepts. C++ was difficult to learn and is sometimes fun to master. Although, most of my current development occurs outside of C++, I'd consider it to be my "go-to" for building embedded systems.
 </div>`
 
 explist.cloud = `<h1>Cloud</h1>
@@ -59,7 +59,7 @@ AWS cloud environments including. AWS S3, dynamodb, EC2. Have played around with
 
 explist.it = `<h1>IT</h1>
 <img src="./images/it.png"  class="exp-logo-float" data-exp="repair" alt="">
-Wasted sanity and time fixing Windows after it bricks itself. Raspiberry pi and related projects. NAS setup, etc. Currently I hold a Security+ cert
+Windows and Linux wrangler (installation, management, debugging). Raspiberry pi and related IT/home server projects such as NAS setup, computer vision camera/security camera, magic mirror. Currently I hold a Security+ cert. Built and maintenced PC's, laptops, phones, etc.
 </div>`
 
 var expicons = document.getElementsByClassName("exp-logo")
