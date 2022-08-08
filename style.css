@@ -141,6 +141,12 @@ body{
   font-size: 85px;
 }
 
+.about-me-text{
+  font-size: 50px;
+  margin: auto;
+  width: 85%;
+}
+
 .center-card{
     margin: auto;
     padding: 30px;
@@ -252,6 +258,16 @@ body{
   }
  }
 
+ @media (max-width: 800px) { 
+  .contact-svg{ 
+    width: 7rem;
+    height: 7rem;
+  }
+  .contact-text{
+    font-size: 1.5rem;
+  }
+ }
+
  @media (max-width: 520px) { 
   .skillz-font{
     width: 100%;
@@ -272,6 +288,9 @@ body{
   .contact-text{
     font-size: 1rem;
   }
+  .about-me-text{
+    font-size: 30px !important;
+  }
  }
 
  @media (max-width: 393px) {
@@ -285,12 +304,15 @@ body{
     font-size: 1rem !important;
     height: 17em;
   }
+  .about-me-text{
+    font-size: 45px;
+  }
  }
 
  @media (min-width: 900px) { 
   .skillz-font{
     font-size: 3rem !important;
-  }  
+  }
  }
 
  @media (max-width: 400px) {
