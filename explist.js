@@ -39,7 +39,6 @@ I have currently been learning <a href="https://reactjs.org/" target="_blank">Re
 explist.frontend = `<h1>Frontend</h1>
 <img src="./images/frontend.png"  class="exp-logo-float" data-exp="repair" alt="">
 2+ years in frontend development. Worked with previous tooling such as Bootstrap, Tailwind, SASS/SCSS, Postcss, Webpack, Pug  Eslint, etc.
-Pugsass css js bootstrap
 </div>`
 
 explist.java = `<h1>Java</h1>
