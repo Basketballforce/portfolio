@@ -48,7 +48,7 @@ I've used Java for about 2+ years. It was the first programming language I ever 
 
 explist.cplus = `<h1>C++</h1>
 <img src="./images/c++.png"  class="exp-logo-float" data-exp="repair" alt="">
-2.5+ years of experience and my first in depth programming language. C++ was the core language of my computer science related coursework in college and is where I learned programming/CS concepts. C++ was difficult to learn and is sometimes fun to master. Although, most of my current development occurs outside of C++, I'd consider it to be my "go-to" for building embedded systems.
+2.5+ years of experience and my first in depth programming language. C++ was the core language of my computer science related coursework in college and is where I learned programming/CS concepts. Although, most of my current development occurs outside of C++, I'd consider it to be my "go-to" for building embedded systems.
 </div>`
 
 explist.cloud = `<h1>Cloud</h1>
