@@ -171,3 +171,7 @@ nav.navbar.navbar-expand-lg.sticky-top.glassy-white-nav.navbar-dark.border-botto
   .img-invert{
     filter: invert(0);
   }
+
+  .contact-svg{
+    color: black;
+  }
