@@ -180,10 +180,14 @@ body{
     height: 32px;
 }
 
+#sunMoon{
+  padding-top: 6.25px;
+  padding-bottom: 6.25px;
+}
+
 #sunMoon > svg{
   will-change: auto;
 }
-
 
 .spacer{
   margin: 15rem;
