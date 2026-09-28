@@ -302,7 +302,7 @@ body{
  @media (max-width: 992px) {
   .exp-description{
     font-size: 1rem !important;
-    height: 17em;
+    height: 20em;
   }
   .about-me-text{
     font-size: 45px;
